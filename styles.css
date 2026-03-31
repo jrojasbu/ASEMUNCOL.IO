@@ -179,6 +179,39 @@ section {
     padding: 80px 20px;
 }
 
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.about-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 28px 24px;
+    border-left: 4px solid #0ECAE0;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.18);
+}
+
+.about-card h3 {
+    color: #04394D;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+.about-card p {
+    color: #555;
+    line-height: 1.75;
+    font-size: 0.98rem;
+}
+
 .section-title {
     font-size: 2.5rem;
     color: #04394D;
@@ -382,12 +415,19 @@ section {
     padding: 20px;
     background: #f0f8ff;
     border-left: 4px solid #0ECAE0;
-    border-radius: 4px;
+    border-radius: 14px;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .benefit-item p {
     color: #333;
     line-height: 1.6;
+}
+
+.benefit-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 22px 55px rgba(0, 0, 0, 0.22);
 }
 
 /* Contact section */
@@ -531,7 +571,7 @@ section {
     background: white;
     padding: 40px 30px;
     border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
     scroll-snap-align: start;
@@ -541,7 +581,7 @@ section {
 
 .team-member:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.35);
 }
 
 .team-member h3 {
@@ -641,7 +681,7 @@ section {
 
 /* Footer */
 footer {
-    background: #282a52;
+    background: #000000;
     color: white;
     padding: 40px 20px;
     text-align: center;
